@@ -60,7 +60,6 @@ fn main() {
     if target.contains("gnu") || target.contains("darwin") {
         build
             .flag("-std=c++17")
-            .flag("-Wno-missing-field-initializers")
             .flag("-Wno-nullability-completeness")
             .flag("-Wno-unused-parameter")
             .flag("-Wno-unused-variable")
